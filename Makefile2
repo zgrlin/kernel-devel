@@ -1,0 +1,7 @@
+$ cp /boot/.config .
+$ make -j10
+$ sudo make headers_install INSTALL_HDR_PATH=/usr/src/linux-headers-`uname -r`
+$ sudo make modules_install
+$ sudo make install
+$ sudo update-initramfs -c -k `uname -r`
+$ sudo update-grub
