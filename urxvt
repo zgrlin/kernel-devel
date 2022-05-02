@@ -1,0 +1,8 @@
+$ git clone https://github.com/muennich/urxvt-perls
+$ mkdir ~/.urxvt/ext
+$ cd urxvt-perls
+$ cp * ~/.urxvt/ext
+$ git clone https://github.com/addy-dclxvi/bitmap-font-collections.git ~/.fonts/misc
+$ xset +fp ~/.fonts/misc/
+$ fc-cache -fv
+$ xrdb ~/.Xresources
