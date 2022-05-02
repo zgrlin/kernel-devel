@@ -1,0 +1,5 @@
+$ iw dev
+$ iw interface link
+$ iw interface scan
+$ wpa_passphrase SSID >> /etc/wpa_supplicant.conf
+$ wpa_supplicant -B -D wext -i interface -c /etc/wpa_supplicant.conf
